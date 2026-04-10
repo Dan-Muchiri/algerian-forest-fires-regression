@@ -1,0 +1,7 @@
+prefix=/home/dan/Desktop/software-dev/algerian-forest-fires/venv
+includedir=${prefix}/include
+
+Name: RenderProto
+Description: Render extension headers
+Version: 0.11.1
+Cflags: -I${includedir}

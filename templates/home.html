@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Algerian Forest Fires App</title>
+    </head>
+    <body>
+        <h1>FWI Prediction</h1>
+        
+        <form method="post" action="{{ url_for('predict_datapoint') }}">
+            <label for="Temperature">Temperature:</label>
+            <input type="text" id="Temperature" name="Temperature" placeholder="Temperature" required="required"><br><br>
+            
+            <label for="RH">Relative Humidity:</label>
+            <input type="text" id="RH" name="RH" placeholder="Relative Humidity" required="required"><br><br>
+            
+            <label for="Ws">Wind Speed:</label>
+            <input type="text" id="Ws" name="Ws" placeholder="Wind Speed" required="required"><br><br>
+
+            <label for="Rain">Rain:</label>
+            <input type="text" id="Rain" name="Rain" placeholder="Rain" required="required"><br><br>
+
+            <label for="FFMC">Fine Fuel Moisture Code:</label>
+            <input type="text" id="FFMC" name="FFMC" placeholder="Fine Fuel Moisture Code" required="required"><br><br>
+
+            <label for="DMC">Duff Moisture Code:</label>
+            <input type="text" id="DMC" name="DMC" placeholder="Duff Moisture Code" required="required"><br><br>
+
+            <label for="ISI">Initial Spread Index:</label>
+            <input type="text" id="ISI" name="ISI" placeholder="Initial Spread Index" required="required"><br><br>
+
+            <label for="Classes">Classes:</label>
+            <input type="text" id="Classes" name="Classes" placeholder="Classes" required="required"><br><br>
+
+            <label for="Region">Region:</label>
+            <input type="text" id="Region" name="Region" placeholder="Region" required="required"><br><br>
+
+            <button type="submit" value="Predict FWI" >
+                Predict FWI
+            </button>
+        </form>
+
+        <h2>The FWI Prediction is {{ result }}</h2>
+
+    </body>
+</html>

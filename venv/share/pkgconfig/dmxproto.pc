@@ -1,0 +1,7 @@
+prefix=/home/dan/Desktop/software-dev/algerian-forest-fires/venv
+includedir=${prefix}/include
+ 
+Name: DMXProto
+Description: DMX extension headers
+Version: 2.3.1
+Cflags: -I${includedir}
